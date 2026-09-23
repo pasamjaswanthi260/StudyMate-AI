@@ -1,0 +1,169 @@
+/* General page styling */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    margin: 0;
+    padding: 0;
+    color: #222;
+}
+
+
+/* Main container */
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Application title */
+
+h1 {
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 36px;
+    color: #1f3c88;
+}
+
+
+/* Subtitle */
+
+p {
+    text-align: center;
+    color: #666;
+    font-size: 17px;
+    margin-bottom: 35px;
+}
+
+
+/* Labels */
+
+label {
+    display: block;
+    margin-top: 22px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+/* Feature dropdown */
+
+select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background: white;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+
+/* Text input area */
+
+textarea {
+    width: 100%;
+    height: 180px;
+    padding: 14px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    resize: vertical;
+}
+
+
+/* Focus effect */
+
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #1f6feb;
+    box-shadow: 0 0 0 3px rgba(31, 111, 235, 0.12);
+}
+
+
+/* Generate button */
+
+button {
+    display: block;
+    margin: 22px auto 0;
+    padding: 13px 35px;
+    border: none;
+    border-radius: 8px;
+    background: #1f6feb;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+/* Button hover effect */
+
+button:hover {
+    background: #1558b0;
+    transform: translateY(-1px);
+}
+
+
+/* AI response section */
+
+.output {
+    margin-top: 40px;
+    padding: 25px;
+    background: #f8faff;
+    border: 1px solid #dce6f5;
+    border-radius: 12px;
+}
+
+
+/* AI response heading */
+
+.output h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #1f3c88;
+}
+
+
+/* AI response text */
+
+.response-text {
+    white-space: pre-wrap;
+    line-height: 1.7;
+    text-align: left;
+    color: #333;
+    font-size: 16px;
+}
+
+
+/* Responsive design for smaller screens */
+
+@media (max-width: 700px) {
+
+    .container {
+        width: 90%;
+        padding: 25px;
+        margin: 25px auto;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    textarea {
+        height: 160px;
+    }
+
+}

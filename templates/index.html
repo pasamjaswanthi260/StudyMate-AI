@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudyMate AI</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>StudyMate AI</h1>
+
+        <p>Your AI-powered study assistant</p>
+
+
+        <form method="POST">
+
+            <label for="feature">
+                Choose a study feature:
+            </label>
+
+            <select id="feature" name="feature">
+
+                <option value="explain">
+                    Explain Concept
+                </option>
+
+                <option value="summarize">
+                    Summarize Notes
+                </option>
+
+                <option value="improve">
+                    Improve Answer
+                </option>
+
+                <option value="quiz">
+                    Generate Quiz
+                </option>
+
+            </select>
+
+
+            <label for="question">
+                Enter your question or study content:
+            </label>
+
+            <textarea
+                id="question"
+                name="question"
+                placeholder="Enter your topic or study content..."
+                required></textarea>
+
+
+            <button type="submit">
+                Generate
+            </button>
+
+        </form>
+
+
+        <div class="output">
+
+            <h2>AI Response</h2>
+
+            {% if response %}
+
+                <div class="response-text">
+                    {{ response }}
+                </div>
+
+            {% else %}
+
+                <div class="response-text">
+                    Your generated answer will appear here.
+                </div>
+
+            {% endif %}
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
